@@ -1,0 +1,107 @@
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@900" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <div class="navbar">
+            <img class="big-logo" src="Logotype.svg">
+        </div>
+        
+        <div class="hero-section">
+            <div class="hero-text-container">
+                <h1 class="title">Amplify Your Potential</h1>
+                <p class="landing-text">BeLive empowers musicians and music promoters, creating a world of 
+                    opportunities and connections. 
+                    Book gigs, connect with promoters, and thrive as an artist. Join BeLive today and amplify your potential.</p>
+                <div class="ctas">
+                    <button class="join-us">Join us</button> 
+                    <!-- <button class="join-us">Join As Musician</button> -->
+                </div>
+            </div>
+            <div class="hero-image-container">
+                <img class="landing-image" src="landing-page-hero.jpeg">
+            </div>  
+        </div>
+        <div class="cta-section">
+            <div class="cta">
+                Book gigs, connect with promoters, and thrive as an artist.
+                <div (click)="this.scrollToSection('musician-section')"  class="cta-button">
+                    <h2>For Musicians</h2>
+                    <img class="icon" src="down-icon.svg">
+                </div>
+            </div>
+            <div class="cta">
+                Easily find local and emerging talent to make your events a success.
+                <div (click)="this.scrollToSection('musician-section')" class="cta-button">
+                    <h2>For Promoters</h2>
+                    <img class="icon" src="down-icon.svg">
+                </div>
+            </div>
+        </div>
+        
+        <div id="musician-section" class="musician-section user-section">
+            <div class="user-explainer-section">
+                <div class="user-explainer-text">
+                    <h3   class="user-intro">For Musicians</h3>
+                    <div class="tag-row">
+                        <span class="tag">Individual Artists</span>
+                        <span class="tag">Bands</span>
+                        <span class="tag">Djs</span>
+                    </div>
+                    <h1 class="user-title">Grow and Get Discovered</h1>
+                    <img class="user-image small-screen-only" src="landing-page-2.jpg">
+                    Our platform is comitted to connect musicians, bands, and any individual artists to the
+                    promoters that will help them advance in their careers. Get discovered by the people that matter, 
+                    easily create a profile, apply to events, and show your talent!
+                </div>
+                <img class="user-image big-screen-only" src="landing-page-2.jpg">
+            </div>
+            <button class="sign-up-button">Sign up as Musician</button> 
+        </div>
+        
+        <div id="promoter-section" class="user-section promoter-section">
+            <div class="user-explainer-section">
+                <div class="user-explainer-text">
+                    <h3   class="user-intro">For Promotors</h3>
+                    <div class="tag-row">
+                        <span class="tag">Organisations</span>
+                        <span class="tag">Enterprises</span>
+                        <span class="tag">Festivals</span>
+                    </div>
+                    <h1 class="user-title">Easily find local and emerging talent</h1>
+                    <img class="user-image small-screen-only" src="landing-page-4.jpg">
+                    Our platform is comitted to connect musicians, bands, and any individual artists to the
+                    promoters that will help them advance in their careers. Get discovered by the people that matter, 
+                    easily create a profile, apply to events, and show your talent!
+                </div>
+                <img class="user-image big-screen-only" src="landing-page-4.jpg">
+            </div>
+            <button class="sign-up-button">Sign up as promoter</button> 
+        </div>
+        <div class="closing-section" >
+            <div class="closing-section-text">
+                <img class="closing-logo" src="Stripes-Green.svg">
+                <h1>FIND YOUR STAGE</h1>
+            </div>
+            <img class="closing-section-image" src="landing-page-5.jpg">
+        </div>
+        
+        <div class="footer">
+            <div>
+                <img class="footer-logo" src="logo-in-square.svg">
+            </div>
+            <div>
+                <p>BeLive</p>
+                <p>59 Bull Close Road</p>
+                <p>Norwich</p>
+                <p>United Kingdom</p>
+            </div>
+            <div class="footer-sub-section">
+                williambooth.belive@gmail.com
+            </div>
+        </div>        
+    </body>
+</html>
