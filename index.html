@@ -4,31 +4,7 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@900" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script>
-        document.addEventListener('submit', function (event) {
-            let signUp = document.getElementById("sign-up");
-            signUp.disabled = true;
-            signUp.value = "Submitting"
-            event.preventDefault();
-            
-            const formdata =  new FormData(event.target);
-            console.log(formdata);
-            fetch('https://nkwi8qu7fl.execute-api.eu-west-2.amazonaws.com/Interest', {
-                method: 'PUT',
-                body: { email: formdata.email.toString()} ,
-            }).then(function (response) {
-                signUp.value = 'Submitted';
-                if (response.ok) {
-                    return response.json();
-                }
-                return Promise.reject(response);
-            }).then(function (data) {
-                console.log(data);
-            }).catch(function (error) {
-                console.warn(error);
-            });
-        });
-    </script>
+    <script src="index.js"></script>
 </head>
 
 <body>
@@ -44,7 +20,7 @@
                 Book gigs, connect with promoters, and thrive as an artist. Join BeLive today and amplify your
                 potential.</p>
             <div class="ctas">
-                <form>
+                <form id="interest">
                     <div class="row">
                         <input type="text" name="email" class="sign-up-input" placeholder="E-mail">
                         <button id="sign-up" type="submit" class="join-us">Sign up</button>
