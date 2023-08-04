@@ -228,7 +228,7 @@ body .small-screen-only {
 .join-us {
     position: relative;
     left: -15px;
-    min-width: 150px;
+    min-width: 155px; 
     margin: 0 0 0 0;
     padding: 16px 36px;
 }
