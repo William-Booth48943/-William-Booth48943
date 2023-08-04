@@ -226,11 +226,16 @@ body .small-screen-only {
 }
 
 .join-us {
+    display: flex;
     position: relative;
     left: -15px;
-    min-width: 155px; 
+    min-width: 170px; 
     margin: 0 0 0 0;
     padding: 16px 36px;
+    justify-content: center;
+}
+.join-us.submitted {
+    background-color: #CCC;
 }
 
 .sign-up-input 
@@ -434,3 +439,7 @@ body .small-screen-only {
         }
 }
 
+#response {
+    position: absolute;
+    color: #FF6344;
+}
