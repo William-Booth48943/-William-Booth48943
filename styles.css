@@ -19,7 +19,7 @@ body {
 }
 h2 {
     font-size: 40px;
-    font-style: normal;
+    font-style: normal; 
     font-weight: 500;
     line-height: 110%;
     text-decoration-line: underline;
@@ -76,7 +76,9 @@ div {
 }
 
 .row {
+    margin-top: 24px;
     display: flex;
+    align-items: center;
 }
 
 .big-logo {
@@ -224,8 +226,31 @@ body .small-screen-only {
 }
 
 .join-us {
-    margin: 24px 0 0 0;
+    position: relative;
+    left: -15px;
+    min-width: 150px;
+    margin: 0 0 0 0;
+    padding: 16px 36px;
 }
+
+.sign-up-input 
+{
+    display: flex;
+    width: 100%;
+    height: 58px;
+    padding: 18px 24px;
+    align-items: center;
+    gap: 8px;
+    color: var(--neutral-02, #959595);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    border-radius: 12px;
+    border: none;   
+}
+
 
 .hero-text-container {
     background-color: #B7A7FE;
@@ -274,7 +299,7 @@ body .small-screen-only {
             margin: 12px 0
         }
 
-        body .join-us {
+        body .row {
             margin: 12px 0 0 0;
         }
 }
@@ -362,6 +387,7 @@ body .small-screen-only {
 
 @media (max-width: 1023px) {
         body .closing-section-image {
+            padding: 0px;
             width: 100%;
         }
         body .closing-section-text {
@@ -407,3 +433,4 @@ body .small-screen-only {
             border-radius: 8px;
         }
 }
+
