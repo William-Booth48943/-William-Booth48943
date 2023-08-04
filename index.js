@@ -40,7 +40,5 @@ async function handleFormSubmit(event) {
 window.onload = function()
 {
     let form = document.getElementById("interest");
-let form2 = document.getElementsByTagName("form");
-let wtf = document.get
-form.addEventListener('submit', handleFormSubmit)
+    form.addEventListener('submit', handleFormSubmit)
 }
