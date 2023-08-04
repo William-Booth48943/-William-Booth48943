@@ -44,6 +44,10 @@ function validateEmail(email) {
     return re.test(String(email).toLowerCase());
   }
 
+function scrollToSection(section) {
+    const element = document.getElementById(section);
+    element.scrollIntoView(false);
+}
 
 window.onload = function()
 {
